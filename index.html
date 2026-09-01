@@ -1,95 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja" data-theme="light">
 <head>
   <meta charset="utf-8">
-  <title>Lunari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lunariは、日本語話者が英語に近いSVO語順を気軽に練習できるシンプルな人工言語です。">
+  <meta property="og:title" content="Lunari — A gentle bridge to English word order">
+  <meta property="og:description" content="三言語辞書、文法ガイド、練習問題でLunariを学ぼう。">
+  <meta property="og:type" content="website">
+  <title>Lunari — A gentle bridge to English word order</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+<body data-page="home">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Lunari ホーム"><span class="brand-mark" aria-hidden="true"></span><span>Lunari</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" data-site-nav aria-label="メインナビゲーション">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="search.html" data-nav="dictionary">Dictionary</a>
+        <a href="grammar.html" data-nav="grammar">Grammar</a>
+        <a href="practice.html" data-nav="practice">Practice</a>
+        <a href="about.html" data-nav="about">About</a>
+      </nav>
+      <button class="icon-button" type="button" data-theme-toggle aria-label="ダークテーマに切り替える">☾</button>
+    </div>
+  </header>
 
-<body>
+  <main id="main">
+    <div class="page-shell">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Constructed language · 2026</p>
+          <h1>Meet <span>Lunari.</span></h1>
+          <p>日本語話者のための、英語の語順に近いシンプルな人工言語。小さな語彙と軽い文法から、SVOの感覚を楽しく育てます。</p>
+          <div class="hero-actions">
+            <a class="button button--primary" href="practice.html">Start learning <span aria-hidden="true">→</span></a>
+            <a class="button button--secondary" href="search.html">Open dictionary</a>
+          </div>
+        </div>
+        <article class="sentence-card" aria-label="Lunariの例文">
+          <span class="sentence-card__label">One sentence, three clear parts</span>
+          <div class="sentence-card__text">
+            <strong>Mi sena aura.</strong>
+            <span>I like the sky. / 私は空が好きです。</span>
+          </div>
+          <div class="token-row" aria-label="文の構成">
+            <div class="token"><strong>Mi</strong><span>Subject · 私</span></div>
+            <div class="token"><strong>sena</strong><span>Verb · 好き</span></div>
+            <div class="token"><strong>aura</strong><span>Object · 空</span></div>
+          </div>
+        </article>
+      </section>
 
-<header>
-  <img src=".png" alt="Lunari Logo" class="logo">
-  <h1>Lunari</h1>
-  
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="user.html">User</a>
-    <a href="setting.html">Settings</a>
-    <a href="login.html">Login</a>
-  </nav>
-</header>
+      <section class="section" aria-labelledby="why-lunari">
+        <div class="section-heading">
+          <div><p class="eyebrow">Why Lunari</p><h2 id="why-lunari">Small rules.<br>Clear sentences.</h2></div>
+          <p>英語に似た語順を保ちながら、冠詞・三人称のs・複雑な複数形を減らした、気軽に試せる学習用言語です。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-number">01 / SEARCH</span><h3>三言語で探せる</h3><p>Lunari・English・日本語のどれを入力しても、登録された単語を検索できます。</p></article>
+          <article class="feature-card"><span class="feature-number">02 / LEARN</span><h3>ルールをひと目で</h3><p>SVO、時制、疑問文などを、短い説明と例文で確認できます。</p></article>
+          <article class="feature-card"><span class="feature-number">03 / PRACTICE</span><h3>すぐに使ってみる</h3><p>並び順や語形変化のミニ問題で、覚えたことをその場で試せます。</p></article>
+        </div>
+      </section>
 
-<main>
-    <h1>Lunari Dictionary</h1>
+      <section class="section" aria-labelledby="quick-title">
+        <div class="quick-search-layout">
+          <div>
+            <p class="eyebrow">Quick dictionary</p>
+            <div class="section-heading"><h2 id="quick-title">One word away.</h2></div>
+            <p class="muted">Lunari、英語、日本語のいずれかを入力してください。現在の登録語彙から最初の一致を表示します。</p>
+            <div class="hero-actions"><a class="button button--secondary" href="search.html">すべての単語を見る</a></div>
+          </div>
+          <div>
+            <label class="search-box" for="quick-search"><span aria-hidden="true">⌕</span><input id="quick-search" type="search" autocomplete="off" placeholder="cat / 猫 / lumi"></label>
+            <div class="panel quick-result" id="quick-result" aria-live="polite"></div>
+          </div>
+        </div>
+      </section>
 
-    <h2>Basic Rules</h2>
-    <p>SVO (same as English)<br>
-        過去形は語尾に「-na」をつける<br>
-        例: mira → mirana<br>
-        未来形は語尾に「-va」をつける<br>
-        例: mira → mirava<br>
-        進行形は動詞の前に「-li」をつける<br>
-        例: li nemu<br>
-    </p>
-    
-    冠詞は無し 三人称のsも無し 形容詞と副詞の区別も無いので、形容詞はそのまま副詞としても使える。
-    複数形もなくて前に数字をつけるだけ
-    vaは未来 
-    疑問系はke?を文末につけるだけ
-    性別の区別無し
-    主語 + (否定形) + 数 + 動詞 + ke? (疑問形)
-    形容副詞はどこにでもおける
-    現在形のみbe動詞が必要 elana/ela/elava
+      <section class="cta-band">
+        <div><h2>Ready to make a sentence?</h2><p>5問の短い練習で、最初のLunariを組み立てましょう。</p></div>
+        <a class="button" href="practice.html">Practice now</a>
+      </section>
+    </div>
+  </main>
 
-    <ul>
-        <li>I 私 mi</li>
-        <li>You あなた lu</li>
-        <li>like 好き sena</li>
-        <li>sky 空 aura</li>
-        <li>cute かわいい lili</li>
-        <li>go 行く naru</li>
-        <li>cat 猫 lumi</li>
-        <li>dog 犬 luma</li>
-        <li>sleep 寝る nemu</li>
-        <li>no いいえ nei</li>
-        <li>yes はい ya</li>
-        <li>want to したい mei</li>
-    </ul>
-
-    <h2>Example Sentences</h2>
-    <p>I like the sky.<br>
-    → Mi sena aura.<br>
-    <br>
-    I like you.<br>
-    → Lu sena lu.<br>
-    <br>
-    The cute cat.<br>
-    → Lumi lili.<br>
-    <br>
-    I am sleeping.<br>
-    → Mi li nemuva.<br>
-    </p>
-</main>
-
-<div class="chat-popup" id="chatBox">
-  <div class="messages" id="messagees"></div>
-  
-  <input type="text" id="messageInput" placeholder="Type something...">
-  <button id="sendBtn">Search</button>
-</div>
-
-<footer>
-  <p>© 2026 Lunari</p>
-</footer>
-
-<script src="script.js"></script>
+  <footer class="site-footer"><div class="footer-inner"><span>© <span data-year></span> Lunari · Created by Hiori</span><a href="about.html">About the language</a></div></footer>
+  <script src="data.js"></script><script src="script.js"></script><script src="home.js"></script>
 </body>
 </html>
-
-
-
-
 

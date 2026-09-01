@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="5問のミニクイズでLunariの語順と語形変化を練習します。">
+  <title>Practice — Lunari</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="practice">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Lunari ホーム"><span class="brand-mark" aria-hidden="true"></span><span>Lunari</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" data-site-nav aria-label="メインナビゲーション"><a href="index.html" data-nav="home">Home</a><a href="search.html" data-nav="dictionary">Dictionary</a><a href="grammar.html" data-nav="grammar">Grammar</a><a href="practice.html" data-nav="practice">Practice</a><a href="about.html" data-nav="about">About</a></nav>
+    <button class="icon-button" type="button" data-theme-toggle aria-label="ダークテーマに切り替える">☾</button>
+  </div></header>
+  <main id="main"><div class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Mini practice</p><h1>Learn by trying.</h1><p>語順と時制を中心にした5問です。間違えても、その場で理由を確認できます。</p></section>
+    <section class="section--tight"><div class="quiz-wrap"><article class="quiz-card">
+      <div class="quiz-top"><span>First steps</span><strong id="quiz-progress">1 / 5</strong></div>
+      <h2 id="quiz-prompt"></h2><p class="quiz-hint" id="quiz-hint"></p>
+      <div class="quiz-options" id="quiz-options" aria-labelledby="quiz-prompt"></div>
+      <div class="quiz-feedback" id="quiz-feedback" role="status" hidden></div>
+      <div class="score-panel" id="quiz-score" hidden></div>
+      <div class="quiz-actions"><button class="button button--primary" id="quiz-next" type="button" hidden>次の問題</button><button class="button button--secondary" id="quiz-restart" type="button">最初から</button></div>
+    </article></div></section>
+  </div></main>
+  <footer class="site-footer"><div class="footer-inner"><span>© <span data-year></span> Lunari · Created by Hiori</span><a href="grammar.html">Review grammar</a></div></footer>
+  <script src="script.js"></script><script src="practice.js"></script>
+</body></html>
+

@@ -1,50 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ja" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <title>Lunari</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lunariの目的、成り立ち、言語設計の考え方。">
+  <title>About — Lunari</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
 </head>
+<body data-page="about">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Lunari ホーム"><span class="brand-mark" aria-hidden="true"></span><span>Lunari</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" data-site-nav aria-label="メインナビゲーション"><a href="index.html" data-nav="home">Home</a><a href="search.html" data-nav="dictionary">Dictionary</a><a href="grammar.html" data-nav="grammar">Grammar</a><a href="practice.html" data-nav="practice">Practice</a><a href="about.html" data-nav="about">About</a></nav>
+    <button class="icon-button" type="button" data-theme-toggle aria-label="ダークテーマに切り替える">☾</button>
+  </div></header>
+  <main id="main"><div class="page-shell">
+    <section class="page-intro"><p class="eyebrow">About the language</p><h1>A language<br>made to try.</h1></section>
+    <section class="section about-lead">
+      <blockquote>“English-shaped grammar, with less weight to carry.”</blockquote>
+      <div class="about-copy"><p>Lunariは、Hioriによって2026年に作られた人工言語（constructed language / conlang）です。主に日本語話者が、英語に近いSVO語順へ気軽に触れることを目的としています。</p><p>英語よりも軽い文法を採用しながら、文の組み立て方には英語との共通点を残します。正解を暗記するだけでなく、自分だけの言語を使う楽しさから語順を身につけるための実験です。</p><p>まだ成長途中のため、文法と語彙は更新されます。このサイトでは未確定の部分を隠さず、言語が作られていく過程も一緒に残します。</p></div>
+    </section>
+    <section class="section" aria-labelledby="principles"><div class="section-heading"><div><p class="eyebrow">Design principles</p><h2 id="principles">What guides Lunari.</h2></div></div>
+      <div class="principle-grid"><article class="principle-card"><span>01</span><h2>Approachable</h2><p>最初の一文を作るまでの負担を小さくし、試すことを優先します。</p></article><article class="principle-card"><span>02</span><h2>Familiar</h2><p>英語に近い語順を使い、日本語とは異なる文の組み立てに慣れます。</p></article><article class="principle-card"><span>03</span><h2>Evolving</h2><p>未確定のルールを明示し、言語が育つ過程そのものを記録します。</p></article></div>
+    </section>
+    <section class="cta-band"><div><h2>Begin with one word.</h2><p>三言語辞書から、Lunariの小さな世界を見てみましょう。</p></div><a class="button" href="search.html">Open dictionary</a></section>
+  </div></main>
+  <footer class="site-footer"><div class="footer-inner"><span>© <span data-year></span> Lunari · Created by Hiori</span><a href="index.html">Back home</a></div></footer>
+  <script src="script.js"></script>
+</body></html>
 
-<body>
-
-<header>
-  <img src="logo.png" alt="Lunari Logo" class="logo">
-  <h1>Lunari</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="user.html">User</a>
-    <a href="setting.html">Settings</a>
-    <a href="login.html">Login</a>
-  </nav>
-</header>
-
-
-<main>
-  
-<h3>About Lunari language</h3>
-<p>Lunari is "Conlang" created by Hiori since 2026. 
-  The purpose of the language is focusing on mainly Japanese speakers who want to practice English grammar.
-  Lunari's grammar is easier than English, but it has almost same grammar as English.
-  If you practice this language, you can use the language no one do not know!
-  <br><br>
-  Are you interested in Lunari? Please try to learn it!
-</p>
-
-
-</main>
-
-<div class="chat-popup" id="chatBox">
-  <p>User: Hello!</p>
-  <input type="text" placeholder="Type message...">
-</div>
-
-<footer>
-  <p>© 2026 Lunari</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>

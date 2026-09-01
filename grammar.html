@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Lunariの基本語順、時制、進行形、疑問文を例文とともに解説します。">
+  <title>Grammar — Lunari</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body data-page="grammar">
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="brand" href="index.html" aria-label="Lunari ホーム"><span class="brand-mark" aria-hidden="true"></span><span>Lunari</span></a>
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" data-site-nav aria-label="メインナビゲーション"><a href="index.html" data-nav="home">Home</a><a href="search.html" data-nav="dictionary">Dictionary</a><a href="grammar.html" data-nav="grammar">Grammar</a><a href="practice.html" data-nav="practice">Practice</a><a href="about.html" data-nav="about">About</a></nav>
+    <button class="icon-button" type="button" data-theme-toggle aria-label="ダークテーマに切り替える">☾</button>
+  </div></header>
+  <main id="main"><div class="page-shell">
+    <section class="page-intro"><p class="eyebrow">Grammar guide</p><h1>Simple by design.</h1><p>決まっているルールと、これから整理するルールを分けて表示しています。Lunariの成長に合わせて更新される文法ガイドです。</p></section>
+    <section class="section--tight grammar-layout">
+      <nav class="toc" aria-label="文法目次"><strong>On this page</strong><a href="#word-order">基本語順</a><a href="#tense">過去・未来</a><a href="#progressive">進行形</a><a href="#questions">疑問文</a><a href="#modifiers">修飾語</a><a href="#open-rules">未確定ルール</a></nav>
+      <div class="grammar-stack">
+        <article class="grammar-card" id="word-order"><div class="grammar-card__head"><h2>01. 基本語順</h2><span class="status-badge">Core rule</span></div><div class="rule-line"><code>Subject + Verb + Object</code></div><p>Lunariの基本語順は英語と同じSVOです。冠詞、三人称単数のs、名詞の複数形は使用しません。</p><table class="example-table"><thead><tr><th>Lunari</th><th>English</th><th>日本語</th></tr></thead><tbody><tr><td>Mi sena aura.</td><td>I like the sky.</td><td>私は空が好きです。</td></tr><tr><td>Mi sena lu.</td><td>I like you.</td><td>私はあなたが好きです。</td></tr></tbody></table></article>
+        <article class="grammar-card" id="tense"><div class="grammar-card__head"><h2>02. 過去・未来</h2><span class="status-badge">Core rule</span></div><p>動詞の語尾に短い接尾辞をつけて時制を表します。</p><table class="example-table"><thead><tr><th>時制</th><th>作り方</th><th>naru（行く）</th></tr></thead><tbody><tr><td>現在</td><td>原形</td><td>naru</td></tr><tr><td>過去</td><td>動詞 + na</td><td>naruna</td></tr><tr><td>未来</td><td>動詞 + va</td><td>naruva</td></tr></tbody></table></article>
+        <article class="grammar-card" id="progressive"><div class="grammar-card__head"><h2>03. 進行形</h2><span class="status-badge">Core rule</span></div><div class="rule-line"><code>li + verb</code></div><p>動詞の前に <strong>li</strong> を置いて、進行中の動作を表します。</p><table class="example-table"><thead><tr><th>Lunari</th><th>Meaning</th></tr></thead><tbody><tr><td>Mi li nemu.</td><td>私は寝ています。</td></tr></tbody></table><p class="note">以前の例文にあった <code>nemuva</code> は未来接尾辞と重なるため、このガイドでは進行形を <code>li nemu</code> と整理しています。</p></article>
+        <article class="grammar-card" id="questions"><div class="grammar-card__head"><h2>04. 疑問文</h2><span class="status-badge">Core rule</span></div><div class="rule-line"><code>sentence + ke?</code></div><p>語順を変えず、文末に <strong>ke?</strong> を加えるだけで疑問文になります。</p><table class="example-table"><thead><tr><th>Statement</th><th>Question</th></tr></thead><tbody><tr><td>Lu sena lumi.</td><td>Lu sena lumi ke?</td></tr></tbody></table></article>
+        <article class="grammar-card" id="modifiers"><div class="grammar-card__head"><h2>05. 形容詞・副詞</h2><span class="status-badge">Current draft</span></div><p>形容詞と副詞を区別せず、同じ単語を修飾語として使います。現在の例では名詞の後ろに置いています。</p><table class="example-table"><thead><tr><th>Lunari</th><th>English</th><th>日本語</th></tr></thead><tbody><tr><td>Lumi lili.</td><td>A cute cat.</td><td>かわいい猫。</td></tr></tbody></table><p class="note">「どこにでも置ける」という原案と例文の位置関係は、今後の言語設計でさらに決められます。</p></article>
+        <article class="grammar-card" id="open-rules"><div class="grammar-card__head"><h2>06. これから決めること</h2><span class="status-badge status-badge--draft">Needs decision</span></div><p>Lunariは成長途中です。次の項目は、作者が決めるまで一つの正解として扱いません。</p><ul><li>否定語 <strong>nei</strong> を文中のどこに置くか</li><li>コピュラ <strong>ela / elana / elava</strong> の使用範囲</li><li>進行形とコピュラを一緒に使うか</li><li>修飾語の標準的な位置</li></ul></article>
+      </div>
+    </section>
+  </div></main>
+  <footer class="site-footer"><div class="footer-inner"><span>© <span data-year></span> Lunari · Created by Hiori</span><a href="practice.html">Try the practice</a></div></footer>
+  <script src="script.js"></script>
+</body></html>
+

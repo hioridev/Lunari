@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Lunari crescent">
+  <defs>
+    <linearGradient id="g" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8f7cff"/>
+      <stop offset="1" stop-color="#55d6be"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="#17142a"/>
+  <path d="M42.8 43.2A20 20 0 0 1 25.2 12 21 21 0 1 0 51 37a19.9 19.9 0 0 1-8.2 6.2Z" fill="url(#g)"/>
+</svg>
+
